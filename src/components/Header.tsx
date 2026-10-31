@@ -31,7 +31,8 @@ export default function Header() {
           <a className="btn btn-ghost-dark btn-sm hide-sm" href={`tel:${contact.phoneHref}`}>
             <Icon name="phone" size={18} /> {contact.phoneDisplay}
           </a>
-          <a className="btn btn-gold btn-sm" href="#contact">
+          <a className="btn btn-gold btn-sm btn-avatar" href="#contact">
+            <img className="avatar" src="/media/nina-avatar.webp" alt="" width={30} height={30} />
             Talk to Nina
           </a>
           <a className="call-btn" href={`tel:${contact.phoneHref}`} aria-label={`Call Nina on ${contact.phoneDisplay}`}>

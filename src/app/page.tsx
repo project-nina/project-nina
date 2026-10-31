@@ -105,9 +105,14 @@ export default function Page() {
         {/* OWNERS PATHWAY */}
         <section className="section section-wash" id="owners">
           <div className="wrap">
-            <p className="eyebrow">{owners.eyebrow}</p>
-            <h2>{owners.title}</h2>
-            <p className="lead narrow">{owners.intro}</p>
+            <div className="sec-head">
+              <div>
+                <p className="eyebrow">{owners.eyebrow}</p>
+                <h2>{owners.title}</h2>
+                <p className="lead narrow">{owners.intro}</p>
+              </div>
+              <img className="sec-mascot" src="/media/nina-keys.webp" alt="Cartoon Nina holding up a set of house keys" loading="lazy" />
+            </div>
             <div className="options">
               {owners.options.map((o) => (
                 <div key={o.title} className="option">
@@ -148,9 +153,14 @@ export default function Page() {
         {/* AGENTS PATHWAY */}
         <section className="section section-dark" id="agents">
           <div className="wrap">
-            <p className="eyebrow eyebrow-gold">{agents.eyebrow}</p>
-            <h2>{agents.title}</h2>
-            <p className="lead narrow">{agents.intro}</p>
+            <div className="sec-head">
+              <div>
+                <p className="eyebrow eyebrow-gold">{agents.eyebrow}</p>
+                <h2>{agents.title}</h2>
+                <p className="lead narrow">{agents.intro}</p>
+              </div>
+              <img className="sec-mascot" src="/media/nina-point.webp" alt="Cartoon Nina pointing" loading="lazy" />
+            </div>
             <div className="benefits">
               {agents.benefits.map((b, i) => (
                 <div key={b.title} className="benefit">
@@ -207,6 +217,7 @@ export default function Page() {
                 <h2>{instagram.title}</h2>
                 <p className="lead">{instagram.intro}</p>
               </div>
+              <img className="ig-mascot" src="/media/nina-wave.webp" alt="Cartoon Nina waving" loading="lazy" />
               <a className="btn btn-ig" href={instagram.url} target="_blank" rel="noopener">
                 <Icon name="insta" size={20} /> {instagram.follow}
               </a>
@@ -294,6 +305,7 @@ export default function Page() {
                   <small>{contact.email}</small>
                 </a>
               </div>
+              <img className="contact-mascot" src="/media/nina-phone.webp" alt="Cartoon Nina on the phone giving a thumbs up" loading="lazy" />
             </div>
             <ContactForm />
           </div>
@@ -302,6 +314,7 @@ export default function Page() {
         {/* FAQ */}
         <section className="section" id="faq">
           <div className="wrap narrow-wrap">
+            <img className="faq-mascot" src="/media/nina-clipboard.webp" alt="Cartoon Nina with a clipboard" loading="lazy" />
             <p className="eyebrow center">{faq.eyebrow}</p>
             <h2 className="center">{faq.title}</h2>
             <div className="faq">

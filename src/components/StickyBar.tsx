@@ -32,6 +32,7 @@ export default function StickyBar() {
         <Icon name="text" size={20} /> {sticky.text}
       </a>
       <a className="sticky-main" href="#contact" tabIndex={show ? 0 : -1}>
+        <img className="avatar" src="/media/nina-avatar.webp" alt="" width={34} height={34} />
         {sticky.label}
       </a>
     </div>

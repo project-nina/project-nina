@@ -277,3 +277,21 @@ img, svg { display: block; }
 .film-knob { position: absolute; top: 50%; transform: translate(-50%, -50%) rotate(-18deg); width: 46px; height: 46px; border-radius: 50%; background: #fff; display: grid; place-items: center; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); outline: none; }
 .film-knob:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
 .final .btn-gold { background: var(--ink); color: #fff; box-shadow: 0 10px 26px -10px rgba(28, 37, 52, 0.6); }
+
+/* Mascot placements */
+.sec-head { display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: end; }
+.sec-mascot { height: 300px; width: auto; display: block; margin-bottom: -20px; }
+.contact-mascot { height: 280px; width: auto; display: block; margin: 28px auto 0; }
+.faq-mascot { height: 200px; width: auto; display: block; margin: 0 auto 12px; }
+.ig-mascot { height: 170px; width: auto; display: block; margin-left: auto; }
+.ig-head .btn-ig { align-self: flex-end; }
+.avatar { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; flex: none; }
+.btn-avatar { padding-left: 7px; }
+.sticky-main .avatar { width: 34px; height: 34px; }
+@media (max-width: 680px) {
+  .sec-head { grid-template-columns: 1fr; }
+  .sec-mascot { height: 200px; margin: 0 auto -10px; }
+  .contact-mascot { height: 200px; }
+  .faq-mascot { height: 150px; }
+  .ig-mascot { height: 130px; margin: 0 auto; }
+}
