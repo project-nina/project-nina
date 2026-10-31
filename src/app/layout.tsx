@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
   openGraph: { title: site.title, description: site.description, type: "website", locale: "en_NZ", siteName: site.name },
   twitter: { card: "summary_large_image", title: site.title, description: site.description },
-  icons: { icon: "/icon.svg" },
+  icons: { icon: "/icon.png" },
 };
 
 export const viewport: Viewport = { themeColor: "#1c2534" };

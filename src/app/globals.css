@@ -67,6 +67,7 @@ img, svg { display: block; }
 .header-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 76px; }
 .header a { text-decoration: none; }
 .logo { display: inline-flex; align-items: center; gap: 10px; }
+.logo-mark { display: block; flex-shrink: 0; }
 .logo-word { font-family: var(--font-heading), sans-serif; font-weight: 700; font-size: 1.35rem; color: var(--ink); letter-spacing: -0.02em; }
 .logo-word b { font-weight: 900; color: var(--red); }
 .logo-light .logo-word { color: #fff; }
