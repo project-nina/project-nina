@@ -90,8 +90,8 @@ export default function BeforeAfter({ before, after, label, start = 50, autoSwee
           <svg viewBox="0 0 48 48" width="40" height="40">
             <rect x="21" y="2" width="6" height="22" rx="3" fill="#8a5a3a" />
             <rect x="18" y="22" width="12" height="8" fill="#c0c6cc" />
-            <path d="M17 30 h14 l2 12 q-9 6 -18 0 z" fill="#f4b43a" />
-            <path d="M19 40 q5 4 10 0" stroke="#c8432b" strokeWidth="2" fill="none" />
+            <path d="M17 30 h14 l2 12 q-9 6 -18 0 z" fill="#ffffff" stroke="#9aa3ad" strokeWidth="1.5" />
+            
           </svg>
         </span>
       </div>

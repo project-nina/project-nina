@@ -21,7 +21,6 @@ export const site = {
 export const nav = [
   { label: "For agents", href: "#agents" },
   { label: "For owners", href: "#owners" },
-  { label: "Nina's work", href: "#work" },
   { label: "Instagram", href: "#instagram" },
   { label: "About", href: "#about" },
   { label: "FAQ", href: "#faq" },
@@ -97,19 +96,21 @@ export const owners = {
 
 export const agents = {
   eyebrow: "For real estate agents",
-  title: "Bring Nina the hard ones.",
+  title: "Let's work together, the perfect team!",
   intro:
-    "The listing that won't move. The vendor who can't face the repairs. The deceased estate nobody wants to touch. Nina gives you a real option to put in front of them, fast.",
+    "Too scary for first home buyers or Mum and Dad investors? Call Nina, I always give back to the agents that bring me good deals.",
   benefits: [
     { title: "Your client stays your client", text: "Nina works with you, not around you. The relationship is yours." },
     { title: "A quick, straight answer", text: "Send the address and a few photos. Nina will tell you quickly if it's a fit." },
     { title: "Finished homes to list", text: "Assisted sales and renovated homes need a great agent to sell them. That can be you." },
   ],
   cta: "Send Nina a property",
-  secondaryCta: "See Nina's work",
+  secondaryCta: "See Nina's work on Instagram",
 };
 
 export const work = {
+  // Hidden for now (Kiri, 31 Oct): set to true to bring the before-and-after section back.
+  show: false,
   eyebrow: "Nina's work",
   title: "Before and after",
   intro: "Drag the slider on each project to see the difference. Real photos coming soon.",

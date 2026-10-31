@@ -174,14 +174,15 @@ export default function Page() {
               <a className="btn btn-gold" href="#send-property">
                 {agents.cta}
               </a>
-              <a className="btn btn-ghost-light" href="#work">
+              <a className="btn btn-ghost-light" href="#instagram">
                 {agents.secondaryCta}
               </a>
             </div>
           </div>
         </section>
 
-        {/* WORK */}
+        {/* WORK (hidden until real before-and-after photos arrive) */}
+        {work.show && (
         <section className="section" id="work">
           <div className="wrap">
             <p className="eyebrow center">{work.eyebrow}</p>
@@ -207,6 +208,7 @@ export default function Page() {
             </div>
           </div>
         </section>
+        )}
 
         {/* INSTAGRAM */}
         <section className="section section-ig" id="instagram">
