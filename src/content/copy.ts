@@ -6,7 +6,7 @@ export const contact = {
   // PLACEHOLDER: Nina's real mobile and email
   phoneDisplay: "021 000 0000",
   phoneHref: "+64210000000",
-  email: "hello@projectnina.co.nz",
+  email: "hello@project-nina.co.nz",
   area: "Christchurch & Canterbury",
 };
 
@@ -15,13 +15,14 @@ export const site = {
   title: "Project Nina | Christchurch renovator buying as-is, TLC and tired properties",
   description:
     "Nina buys and renovates as-is, where-is, TLC and tired rental properties across Christchurch. Private sellers and landlords can talk to her in confidence. Agents, bring her the hard ones.",
-  url: "https://pitch-project-nina.vercel.app",
+  url: "https://www.project-nina.co.nz",
 };
 
 export const nav = [
   { label: "For agents", href: "#agents" },
   { label: "For owners", href: "#owners" },
   { label: "Nina's work", href: "#work" },
+  { label: "Instagram", href: "#instagram" },
   { label: "About", href: "#about" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -47,7 +48,10 @@ export const hero = {
     },
   ],
   ticks: ["Private and confidential", "Any condition", "You choose the timing"],
-  bannerHint: "Drag the paintbrush to give this old villa some TLC",
+  bannerHint: "Drag the paintbrush to walk Nina past the house",
+  film: "/media/nina-banner-720p.mp4",
+  filmPoster: "/media/nina-banner-start.jpg",
+  filmEnd: "/media/nina-banner-end.jpg",
 };
 
 export const takesOn = {
@@ -135,6 +139,10 @@ export const work = {
 export const about = {
   eyebrow: "Meet Nina",
   title: "Paintbrush in hand, sleeves rolled up",
+  photo: "/media/nina-painting-wall.jpg",
+  photoAlt: "Nina on site in a house she is renovating",
+  photo2: "/media/nina-demolition-selfie.jpg",
+  photo2Alt: "Nina in goggles and mask on demolition day",
   // DRAFT: Nina's real story to replace this
   paragraphs: [
     "Nina is a Christchurch renovator who loves the houses everyone else has given up on. As-is, where-is, needs TLC, a bit scary? That's where she does her best work.",
@@ -146,6 +154,23 @@ export const about = {
     { value: "00+", label: "homes renovated" },
     { value: "Chch", label: "born and based" },
     { value: "1", label: "person to deal with" },
+  ],
+};
+
+export const instagram = {
+  eyebrow: "On Instagram",
+  title: "Follow the work as it happens",
+  intro: "Demolition days, paint days and the big reveals. Nina shares it all on Instagram.",
+  handle: "@nabiulina.nina",
+  url: "https://www.instagram.com/nabiulina.nina/",
+  follow: "Follow @nabiulina.nina",
+  // PLACEHOLDER: swap each href for a real reel link and cover once Kiri sends them
+  reels: [
+    { cover: "/media/nina-demolition-selfie.jpg", caption: "Demo day. Out with the old brick.", href: "https://www.instagram.com/nabiulina.nina/" },
+    { cover: "/media/nina-painting-wall.jpg", caption: "Holding the walls up until the plasterer arrives", href: "https://www.instagram.com/nabiulina.nina/" },
+    { cover: "/media/nina-checkered-fleece.jpg", caption: "Site visit in the good fleece", href: "https://www.instagram.com/nabiulina.nina/" },
+    { cover: "/media/nina-demolition-selfie.jpg", caption: "Reel coming soon", href: "https://www.instagram.com/nabiulina.nina/" },
+    { cover: "/media/nina-painting-wall.jpg", caption: "Reel coming soon", href: "https://www.instagram.com/nabiulina.nina/" },
   ],
 };
 

@@ -9,6 +9,7 @@ const paths: Record<string, string> = {
   text: "M4 5h16v11H8l-4 4z",
   mail: "M3 6h18v12H3zM3 7l9 6 9-6",
   check: "M5 12l5 5L20 7",
+  insta: "M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM17.5 6.5h.01",
   arrow: "M5 12h14M13 6l6 6-6 6",
 };
 

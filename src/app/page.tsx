@@ -2,9 +2,10 @@ import Header from "@/components/Header";
 import StickyBar from "@/components/StickyBar";
 import BeforeAfter from "@/components/BeforeAfter";
 import Villa from "@/components/Villa";
+import HeroFilm from "@/components/HeroFilm";
 import ContactForm from "@/components/ContactForm";
 import Icon from "@/components/Icon";
-import Logo, { LogoMark } from "@/components/Logo";
+import Logo from "@/components/Logo";
 import {
   hero,
   takesOn,
@@ -13,6 +14,7 @@ import {
   work,
   about,
   testimonials,
+  instagram,
   faq,
   contactSection,
   contact,
@@ -75,14 +77,7 @@ export default function Page() {
               </ul>
             </div>
             <div className="hero-banner">
-              <BeforeAfter
-                before={<Villa state="tired" />}
-                after={<Villa state="fresh" />}
-                label={hero.bannerHint}
-                start={58}
-                autoSweep
-                className="ba-hero"
-              />
+              <HeroFilm src={hero.film} poster={hero.filmPoster} endPoster={hero.filmEnd} label={hero.bannerHint} />
               <p className="banner-hint">👆 {hero.bannerHint}</p>
             </div>
           </div>
@@ -203,12 +198,40 @@ export default function Page() {
           </div>
         </section>
 
+        {/* INSTAGRAM */}
+        <section className="section section-ig" id="instagram">
+          <div className="wrap">
+            <div className="ig-head">
+              <div>
+                <p className="eyebrow">{instagram.eyebrow}</p>
+                <h2>{instagram.title}</h2>
+                <p className="lead">{instagram.intro}</p>
+              </div>
+              <a className="btn btn-ig" href={instagram.url} target="_blank" rel="noopener">
+                <Icon name="insta" size={20} /> {instagram.follow}
+              </a>
+            </div>
+          </div>
+          <div className="ig-track" role="list">
+            {instagram.reels.map((r, i) => (
+              <a key={i} role="listitem" className="ig-reel" href={r.href} target="_blank" rel="noopener">
+                <img src={r.cover} alt="" loading="lazy" />
+                <span className="ig-play" aria-hidden="true">▶</span>
+                <span className="ig-cap">
+                  <strong>{instagram.handle}</strong>
+                  {r.caption}
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+
         {/* ABOUT */}
         <section className="section section-wash" id="about">
           <div className="wrap about-grid">
-            <div className="about-photo">
-              <LogoMark size={96} />
-              <p>Photo of Nina coming soon</p>
+            <div className="about-photos">
+              <img className="about-photo" src={about.photo} alt={about.photoAlt} loading="lazy" />
+              <img className="about-photo-2" src={about.photo2} alt={about.photo2Alt} loading="lazy" />
             </div>
             <div>
               <p className="eyebrow">{about.eyebrow}</p>
