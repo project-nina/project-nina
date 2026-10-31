@@ -323,3 +323,18 @@ img, svg { display: block; }
 @media (prefers-reduced-motion: reduce) {
   [data-anim], [data-anim].is-awake { opacity: 1; transform: none; animation: none; transition: none; }
 }
+
+/* Narrow phones (iPhone SE, small Androids): keep the logo and sticky bar on one line */
+.logo-word, .sticky a { white-space: nowrap; }
+@media (max-width: 380px) {
+  .logo { gap: 8px; }
+  .logo-word { font-size: 1.15rem; }
+  .sticky { gap: 6px; padding: 6px; left: 8px; right: 8px; bottom: 8px; }
+  .sticky-sm { padding: 0 10px; font-size: 0.95rem; }
+  .sticky-main { font-size: 0.95rem; }
+  .sticky-main .avatar { width: 28px; height: 28px; }
+}
+@media (max-width: 340px) {
+  .logo-word { font-size: 1.02rem; }
+  .sticky-sm svg { display: none; }
+}
