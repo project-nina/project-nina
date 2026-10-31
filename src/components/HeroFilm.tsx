@@ -67,14 +67,14 @@ export default function HeroFilm({ src, poster, endPoster, label }: Props) {
   if (reduced) {
     return (
       <div className="film">
-        <img src={endPoster} alt="Nina in her check fleece walking past a freshly renovated villa, paintbrush raised" />
+        <img src={endPoster} alt="Nina in her check fleece facing the camera, presenting a freshly renovated villa" />
       </div>
     );
   }
 
   return (
     <div className="film">
-      <video ref={video} src={src} poster={poster} muted playsInline preload="auto" aria-label="Nina walks past a tired villa and it gets renovated behind her" />
+      <video ref={video} src={src} poster={poster} muted playsInline preload="auto" aria-label="Nina walks past a tired villa, it gets renovated behind her, then she turns to the camera and presents the finished house" />
       <div
         ref={track}
         className="film-track"
