@@ -301,3 +301,24 @@ img, svg { display: block; }
       #dfe9f1;
   }
 }
+
+/* Cartoon Nina comes alive when her section is on screen (see MascotMotion.tsx) */
+[data-anim] { transform-origin: 50% 100%; opacity: 0; transform: translateY(24px) scale(0.94); transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+[data-anim].is-awake { opacity: 1; transform: none; }
+[data-anim].is-awake { animation: 3.2s ease-in-out 0.7s infinite; }
+[data-anim="wave"].is-awake { animation-name: nina-wave; }
+[data-anim="nudge"].is-awake { animation-name: nina-nudge; }
+[data-anim="jingle"].is-awake { animation-name: nina-jingle; }
+[data-anim="bob"].is-awake { animation-name: nina-bob; }
+[data-anim="tilt"].is-awake { animation-name: nina-tilt; }
+[data-anim="bounce"].is-awake { animation-name: nina-bounce; }
+[data-anim]:hover { animation-duration: 0.9s; }
+@keyframes nina-wave { 0%, 60%, 100% { transform: rotate(0); } 68% { transform: rotate(-4deg); } 76% { transform: rotate(3deg); } 84% { transform: rotate(-3deg); } 92% { transform: rotate(2deg); } }
+@keyframes nina-nudge { 0%, 55%, 100% { transform: translateX(0); } 65% { transform: translateX(10px) rotate(1.5deg); } 75% { transform: translateX(0); } 85% { transform: translateX(7px) rotate(1deg); } }
+@keyframes nina-jingle { 0%, 60%, 100% { transform: rotate(0); } 66% { transform: rotate(3deg); } 72% { transform: rotate(-3deg); } 78% { transform: rotate(2deg); } 84% { transform: rotate(-1deg); } }
+@keyframes nina-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes nina-tilt { 0%, 50%, 100% { transform: rotate(0); } 65% { transform: rotate(-3deg); } 80% { transform: rotate(2deg); } }
+@keyframes nina-bounce { 0%, 55%, 100% { transform: translateY(0) scale(1); } 62% { transform: translateY(0) scale(1.03, 0.96); } 72% { transform: translateY(-16px) scale(0.98, 1.03); } 82% { transform: translateY(0) scale(1.02, 0.98); } 90% { transform: translateY(0) scale(1); } }
+@media (prefers-reduced-motion: reduce) {
+  [data-anim], [data-anim].is-awake { opacity: 1; transform: none; animation: none; transition: none; }
+}

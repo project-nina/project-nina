@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import StickyBar from "@/components/StickyBar";
 import BeforeAfter from "@/components/BeforeAfter";
 import Villa from "@/components/Villa";
+import MascotMotion from "@/components/MascotMotion";
 import HeroFilm from "@/components/HeroFilm";
 import ContactForm from "@/components/ContactForm";
 import Icon from "@/components/Icon";
@@ -111,7 +112,7 @@ export default function Page() {
                 <h2>{owners.title}</h2>
                 <p className="lead narrow">{owners.intro}</p>
               </div>
-              <img className="sec-mascot" src="/media/nina-keys.webp" alt="Cartoon Nina holding up a set of house keys" loading="lazy" />
+              <img className="sec-mascot" src="/media/nina-keys.webp" data-anim="jingle" alt="Cartoon Nina holding up a set of house keys" loading="lazy" />
             </div>
             <div className="options">
               {owners.options.map((o) => (
@@ -159,7 +160,7 @@ export default function Page() {
                 <h2>{agents.title}</h2>
                 <p className="lead narrow">{agents.intro}</p>
               </div>
-              <img className="sec-mascot" src="/media/nina-point.webp" alt="Cartoon Nina pointing" loading="lazy" />
+              <img className="sec-mascot" src="/media/nina-point.webp" data-anim="nudge" alt="Cartoon Nina pointing" loading="lazy" />
             </div>
             <div className="benefits">
               {agents.benefits.map((b, i) => (
@@ -219,7 +220,7 @@ export default function Page() {
                 <h2>{instagram.title}</h2>
                 <p className="lead">{instagram.intro}</p>
               </div>
-              <img className="ig-mascot" src="/media/nina-wave.webp" alt="Cartoon Nina waving" loading="lazy" />
+              <img className="ig-mascot" src="/media/nina-wave.webp" data-anim="wave" alt="Cartoon Nina waving" loading="lazy" />
               <a className="btn btn-ig" href={instagram.url} target="_blank" rel="noopener">
                 <Icon name="insta" size={20} /> {instagram.follow}
               </a>
@@ -299,7 +300,7 @@ export default function Page() {
                   <small>{contact.email}</small>
                 </a>
               </div>
-              <img className="contact-mascot" src="/media/nina-phone.webp" alt="Cartoon Nina on the phone giving a thumbs up" loading="lazy" />
+              <img className="contact-mascot" src="/media/nina-phone.webp" data-anim="bob" alt="Cartoon Nina on the phone giving a thumbs up" loading="lazy" />
             </div>
             <ContactForm />
           </div>
@@ -308,7 +309,7 @@ export default function Page() {
         {/* FAQ */}
         <section className="section" id="faq">
           <div className="wrap narrow-wrap">
-            <img className="faq-mascot" src="/media/nina-clipboard.webp" alt="Cartoon Nina with a clipboard" loading="lazy" />
+            <img className="faq-mascot" src="/media/nina-clipboard.webp" data-anim="tilt" alt="Cartoon Nina with a clipboard" loading="lazy" />
             <p className="eyebrow center">{faq.eyebrow}</p>
             <h2 className="center">{faq.title}</h2>
             <div className="faq">
@@ -325,7 +326,7 @@ export default function Page() {
         {/* FINAL CTA */}
         <section className="final">
           <div className="wrap final-inner">
-            <img className="final-mascot" src="/media/nina-mascot.webp" alt="Cartoon Nina with her paintbrush and paint tin" loading="lazy" />
+            <img className="final-mascot" src="/media/nina-mascot.webp" data-anim="bounce" alt="Cartoon Nina with her paintbrush and paint tin" loading="lazy" />
             <div className="final-text">
             <h2>{finalCta.title}</h2>
             <p>{finalCta.sub}</p>
@@ -351,6 +352,7 @@ export default function Page() {
         </div>
       </footer>
       <StickyBar />
+      <MascotMotion />
     </>
   );
 }
