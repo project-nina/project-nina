@@ -254,14 +254,6 @@ export default function Page() {
                   {t}
                 </p>
               ))}
-              <div className="stats">
-                {about.stats.map((s) => (
-                  <div key={s.label}>
-                    <strong>{s.value}</strong>
-                    <span>{s.label}</span>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </section>

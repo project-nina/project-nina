@@ -158,9 +158,6 @@ img, svg { display: block; }
 .about-photos { position: relative; padding: 0 40px 40px 0; }
 .about-photo { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); border: 8px solid #fff; box-shadow: var(--shadow); transform: rotate(-1.5deg); }
 .about-photo-2 { position: absolute; right: 0; bottom: 0; width: 46%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 20px; border: 6px solid #fff; box-shadow: var(--shadow); transform: rotate(4deg); }
-.stats { display: flex; gap: 32px; margin-top: 24px; flex-wrap: wrap; }
-.stats strong { display: block; font-family: var(--font-heading), sans-serif; font-weight: 900; font-size: 2.2rem; color: var(--red); line-height: 1; }
-.stats span { font-weight: 600; }
 
 .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 40px; }
 .quote { margin: 0; background: var(--paper); border-radius: 24px; padding: 30px; border: 1px solid var(--line); box-shadow: var(--shadow); }

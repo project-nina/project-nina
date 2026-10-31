@@ -150,12 +150,6 @@ export const about = {
     "She buys and renovates tired homes, helps landlords and families sell properties that have become a burden, and takes on subdivision projects across Canterbury.",
     "Every project is personal. Nina deals with you directly, keeps things private, and treats every house like it's going to be someone's home again. Because it is.",
   ],
-  stats: [
-    // PLACEHOLDER: real numbers from Nina
-    { value: "00+", label: "homes renovated" },
-    { value: "Chch", label: "born and based" },
-    { value: "1", label: "person to deal with" },
-  ],
 };
 
 export const instagram = {
