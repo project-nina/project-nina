@@ -36,7 +36,7 @@ export default function ContactForm() {
       if (!res.ok) throw new Error();
       setSent(true);
     } catch {
-      setError("Sorry, that didn't send. Please call or text Nina instead.");
+      setError("Sorry, that didn't send. Please call or text me instead.");
     } finally {
       setBusy(false);
     }

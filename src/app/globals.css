@@ -81,12 +81,13 @@ img, svg { display: block; }
 .mobile-nav { display: flex; flex-direction: column; padding: 8px 16px 18px; gap: 4px; }
 .mobile-nav a { padding: 12px 4px; font-weight: 700; font-size: 1.1rem; color: var(--ink); border-bottom: 1px solid var(--line); }
 
-/* Hero */
+/* Hero: real Port Hills photo, faded behind the copy so the text stays readable */
 .hero {
   padding: 120px 0 72px;
   background:
-    url("/media/port-hills.svg") center bottom / 100% auto no-repeat,
-    linear-gradient(180deg, #dcebf2 0%, #eef3ef 45%, var(--cream) 100%);
+    linear-gradient(90deg, rgba(251, 246, 238, 0.94) 0%, rgba(251, 246, 238, 0.8) 42%, rgba(251, 246, 238, 0.15) 75%, rgba(251, 246, 238, 0) 100%),
+    url("/media/port-hills.jpg") center bottom / cover no-repeat,
+    #dfe9f1;
 }
 .hero-grid { display: grid; grid-template-columns: 1.02fr 1fr; gap: 48px; align-items: center; }
 .hero-copy .lead { max-width: 560px; }
@@ -289,4 +290,14 @@ img, svg { display: block; }
   .contact-mascot { height: 200px; }
   .faq-mascot { height: 150px; }
   .ig-mascot { height: 130px; margin: 0 auto; }
+}
+
+/* Stacked hero: fade the photo top to bottom instead of left to right */
+@media (max-width: 1020px) {
+  .hero {
+    background:
+      linear-gradient(180deg, rgba(251, 246, 238, 0.55) 0%, rgba(251, 246, 238, 0.88) 40%, rgba(251, 246, 238, 0.92) 100%),
+      url("/media/port-hills.jpg") center top / auto 70% no-repeat,
+      #dfe9f1;
+  }
 }
