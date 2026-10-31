@@ -156,16 +156,17 @@ export const instagram = {
   eyebrow: "On Instagram",
   title: "Follow the work as it happens",
   intro: "Demolition days, paint days and the big reveals. I share it all on Instagram.",
-  handle: "@project.nina",
-  url: "https://www.instagram.com/project.nina/",
-  follow: "Follow @project.nina",
+  handle: "@nabiulina.nina",
+  url: "https://www.instagram.com/nabiulina.nina/",
+  follow: "Follow @nabiulina.nina",
+  // Nina plans a new account (Kiri asked for "project-nina"; Instagram has no hyphens, so likely project.nina). Keep nabiulina.nina until it exists.
   // PLACEHOLDER: swap each href for a real reel link and cover once Kiri sends them
   reels: [
-    { cover: "/media/nina-demolition-selfie.jpg", caption: "Demo day. Out with the old brick.", href: "https://www.instagram.com/project.nina/" },
-    { cover: "/media/nina-painting-wall.jpg", caption: "Holding the walls up until the plasterer arrives", href: "https://www.instagram.com/project.nina/" },
-    { cover: "/media/nina-checkered-fleece.jpg", caption: "Site visit in the good fleece", href: "https://www.instagram.com/project.nina/" },
-    { cover: "/media/nina-demolition-selfie.jpg", caption: "Reel coming soon", href: "https://www.instagram.com/project.nina/" },
-    { cover: "/media/nina-painting-wall.jpg", caption: "Reel coming soon", href: "https://www.instagram.com/project.nina/" },
+    { cover: "/media/nina-demolition-selfie.jpg", caption: "Demo day. Out with the old brick.", href: "https://www.instagram.com/nabiulina.nina/" },
+    { cover: "/media/nina-painting-wall.jpg", caption: "Holding the walls up until the plasterer arrives", href: "https://www.instagram.com/nabiulina.nina/" },
+    { cover: "/media/nina-checkered-fleece.jpg", caption: "Site visit in the good fleece", href: "https://www.instagram.com/nabiulina.nina/" },
+    { cover: "/media/nina-demolition-selfie.jpg", caption: "Reel coming soon", href: "https://www.instagram.com/nabiulina.nina/" },
+    { cover: "/media/nina-painting-wall.jpg", caption: "Reel coming soon", href: "https://www.instagram.com/nabiulina.nina/" },
   ],
 };
 
