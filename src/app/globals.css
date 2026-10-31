@@ -212,8 +212,12 @@ img, svg { display: block; }
 .faq details p { padding-bottom: 20px; margin: 0; }
 
 /* Final + footer */
-.final { padding: 88px 0; background: var(--gold); text-align: center; }
-.final h2 { max-width: 760px; margin-left: auto; margin-right: auto; }
+.final { padding: 64px 0 0; background: var(--gold); overflow: hidden; }
+.final-inner { display: grid; grid-template-columns: 280px 1fr; gap: 40px; align-items: end; }
+.final-mascot { width: 100%; height: auto; display: block; }
+.final-text { padding-bottom: 72px; }
+.thanks-mascot { width: 120px; height: auto; margin: 0 auto 12px; }
+.final h2 { max-width: 760px; }
 .final p { font-weight: 700; font-size: 1.2rem; color: var(--ink); }
 .footer { background: var(--dusk); color: #c6cfdd; padding: 44px 0 110px; }
 .footer-row { display: grid; gap: 10px; justify-items: start; }
@@ -244,6 +248,10 @@ img, svg { display: block; }
   .form-card { padding: 20px; }
   .tab { font-size: 0.88rem; }
   .ig-reel { width: 200px; }
+  .final-inner { grid-template-columns: 1fr; gap: 0; }
+  .final-mascot { width: 200px; margin: 0 auto; order: 2; }
+  .final-text { padding-bottom: 8px; text-align: center; }
+  .final .cta-row { justify-content: center; }
   .sticky {
     display: grid; grid-template-columns: auto auto 1fr; gap: 8px; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60;
     padding: 8px; border-radius: 999px; background: var(--ink); box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
@@ -268,3 +276,4 @@ img, svg { display: block; }
 .film-fill { position: absolute; left: 0; top: 50%; height: 8px; transform: translateY(-50%); border-radius: 999px; background: var(--gold); }
 .film-knob { position: absolute; top: 50%; transform: translate(-50%, -50%) rotate(-18deg); width: 46px; height: 46px; border-radius: 50%; background: #fff; display: grid; place-items: center; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); outline: none; }
 .film-knob:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+.final .btn-gold { background: var(--ink); color: #fff; box-shadow: 0 10px 26px -10px rgba(28, 37, 52, 0.6); }

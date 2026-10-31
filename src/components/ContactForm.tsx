@@ -45,7 +45,7 @@ export default function ContactForm() {
   if (sent) {
     return (
       <div className="form-card form-thanks" role="status">
-        <div className="thanks-icon" aria-hidden="true">✓</div>
+        <img className="thanks-mascot" src="/media/nina-mascot.webp" alt="" />
         <h3>{c.thanksTitle}</h3>
         <p>{c.thanksText}</p>
       </div>

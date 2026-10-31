@@ -318,15 +318,18 @@ export default function Page() {
         {/* FINAL CTA */}
         <section className="final">
           <div className="wrap final-inner">
+            <img className="final-mascot" src="/media/nina-mascot.webp" alt="Cartoon Nina with her paintbrush and paint tin" loading="lazy" />
+            <div className="final-text">
             <h2>{finalCta.title}</h2>
             <p>{finalCta.sub}</p>
-            <div className="cta-row center-row">
+            <div className="cta-row">
               <a className="btn btn-gold" href="#contact">
                 {finalCta.primary}
               </a>
               <a className="btn btn-ghost-dark" href={`tel:${contact.phoneHref}`}>
                 <Icon name="phone" size={18} /> {contact.phoneDisplay}
               </a>
+            </div>
             </div>
           </div>
         </section>
