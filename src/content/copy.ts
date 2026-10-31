@@ -3,9 +3,9 @@
 
 export const contact = {
   name: "Nina",
-  // PLACEHOLDER: Nina's real mobile and email
-  phoneDisplay: "021 000 0000",
-  phoneHref: "+64210000000",
+  // PLACEHOLDER: Nina's real email (mobile confirmed by Kiri)
+  phoneDisplay: "021 131 8648",
+  phoneHref: "+64211318648",
   email: "hello@project-nina.co.nz",
   area: "Christchurch & Canterbury",
 };
