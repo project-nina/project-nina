@@ -9,7 +9,7 @@ export function LogoMark({ size = 40 }: { size?: number }) {
           <rect width="16" height="8" fill="#c8432b" opacity="0.55" />
         </pattern>
         <clipPath id="pn-clip">
-          <rect width="64" height="64" rx="16" />
+          <rect width="64" height="64" />
         </clipPath>
       </defs>
       <g clipPath="url(#pn-clip)">
